@@ -116,7 +116,7 @@ const Contact = () => {
                         />
                       </svg>
                     </span>
-                     <span className="items-center justify-center"> Elfogadom az <a className="text-custom hover:text-primaryho" href="/">adatkezelési feltételeket</a></span>
+                     <span className="items-center justify-center"> Elfogadom az <a className="text-custom hover:text-primaryho" href="/adatvedelem">adatkezelési feltételeket*</a></span>
                     </label>
                   </div>
                   <button

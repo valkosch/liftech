@@ -9,9 +9,9 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Magunkról",
+    title: "Rólunk",
     newTab: false,
-    path: "/magunkrol",
+    path: "/rolunk",
   },
   {
     id: 3,
@@ -45,6 +45,13 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/kapcsolat",
   },
+   {
+    id: 5,
+    title: "Gyakori kérdések",
+    newTab: false,
+    path: "/gyakori-kerdesek",
+  },
+ 
 ];
 
 export default menuData;

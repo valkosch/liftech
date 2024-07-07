@@ -34,7 +34,6 @@ const Footer = () => {
                     height={80}
                     src="/images/logo/liftech_logo.webp"
                     alt="Logo"
-                    className="dark:hidden"
                   />
                 </a>
 
