@@ -6,7 +6,6 @@ export const metadata: Metadata = {
     title: "Alpin platformlift | Liftech.hu",
     viewport: "width=device-width, initial-scale=1",
     robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-    charset: "utf-8",
     description: "Ez az oldal bemutatja az Alpin nevezetű kültéri platformliftet",
     // other metadata
 };

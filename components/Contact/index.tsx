@@ -85,7 +85,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="grid grid-row-2 grid-col-1 mb-6 gap-3 ">
-                  <label for="file">Töltsön föl képet a lépcsőjéről:</label>
+                  <label htmlFor="file">Töltsön föl képet a lépcsőjéről:</label>
                   <input type="file" id="file" name="file" accept="image/png, image/jpeg"/>
                 </div>
                 <div className="flex flex-wrap gap-4 xl:justify-between ">

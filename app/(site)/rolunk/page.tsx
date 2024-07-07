@@ -5,7 +5,6 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Rólunk | Liftech.hu",
   robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-  charset: "utf-8",
   description: "Ezen az oldalon megismerheti a Liftech Group Kft-t",
   // other metadata
 };

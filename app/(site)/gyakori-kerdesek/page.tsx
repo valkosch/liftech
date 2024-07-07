@@ -4,7 +4,6 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Gyakori kérdések | Liftech.hu",
   robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-  charset: "utf-8",
   description: "Ez oldal választ próbál adni az összes, tőlünk gyakran kérdezett kérdésekre.",
   // other metadata
 };

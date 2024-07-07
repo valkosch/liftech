@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "Új lépcsőliftek | Liftech.hu",
   viewport: "width=device-width, initial-scale=1",
   robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-  charset: "utf-8",
   description: "Ez az oldal felsorolja az összes új lépcsőliftet, amit kínálunk",
   // other metadata
 };

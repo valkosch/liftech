@@ -4,7 +4,6 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Adatvédelem | Liftech.hu",
   robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-  charset: "utf-8",
   description: "Ez az oldal kiköti az összes jogi felelősséget, ami a Liftech Group Kft-t terheli",
   // other metadata
 };
