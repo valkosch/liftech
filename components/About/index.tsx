@@ -28,7 +28,7 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >s
-              <Image
+  l            <Image
                 src="/images/features/alpha.webp"
                 alt="Alpha lépcsőlift felszerelve"
                 className="dark:hidden"

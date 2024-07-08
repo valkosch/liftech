@@ -46,13 +46,19 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/kapcsolat",
   },
-   {
+  {
     id: 5,
+    title: "Galéria",
+    newTab: false,
+    path: "/galeria",
+  },
+   {
+    id: 6,
     title: "Gyakori kérdések",
     newTab: false,
     path: "/gyakori-kerdesek",
   },
- 
+  
 ];
 
 export default menuData;

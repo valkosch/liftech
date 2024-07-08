@@ -15,9 +15,8 @@ const Feature = () => {
             headerInfo={{
               title: "AMIRE BÜSZKÉK VAGYUNK",
               subtitle: "Miért válassza a Liftech-et?",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              description: `12 éves tapasztalat, bevált megbízható géppark, hibamentes működés, gyors, precíz és rugalmas
+telepítés, országos lefedettség.`
             }}
           />
           {/* <!-- Section Title End --> */}

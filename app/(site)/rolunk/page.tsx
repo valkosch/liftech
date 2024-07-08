@@ -21,7 +21,23 @@ Rólunk
                 </h2>
             <div className=" lg:justify-between lg:gap-0">
                     <div className="blog-details">
-<p>Használt, de teljes mértékben szervízelt és karbantartott, illetve új lépcsőliftek és platform liftek telepítésével és forgalmazásával foglalkozunk immár 12 éve. Gyakorlatilag a piacon első résztvevőként jelentősen hozzátettünk, hogy minél nagyobb körben ismert és elérhető legyen ez a segítség azok számára, akiknek erre szüksége van. Eleinte műhelyünkben kanyarodó lépcsőlifteket is gyártottunk, de miután sikeresen csatlakoztunk egy nemzetközileg is kimagasló minőséget képviselő cégcsoporthoz,(Lehner Lifttechnik) így jóval professzionálisabban és személyre szabottabban tudjuk megrendelőink igényeit kiszolgálni. Gyakorlatilag az elmúlt két évben egy igen nagy változáson ment végbe cégünk, szintet léptünk, és már vezető szerepet tudunk magunkénak ezen a piacon. De a fejlődés folyamatosságát szem előtt tartva, igyekszünk újabb és újabb termékekkel a megrendelőink legextrémebb kívánságaiknak is megfelelni. Ez úton is köszönjük, hogy minket választott, bízunk benne, hogy a legmegfelelőbb megoldást találjuk meg az Ön egyedi elképzeléséhez. Szép napot!</p>
+<p>Cégünket 12 évvel ezelőtt azzal a céllal hívtuk életre, hogy megoldást találjunk a megváltozott
+mozgáshelyzetű emberek egy égető problémájára, az otthonukban való akadálymentes közlekedésre.</p>
+
+<p>Új és használt (de teljes mértékben szervízelt és karbantartott) lépcsőliftek és platformliftek
+telepítése során az elmúlt években számtalan esetben találkoztunk nagyon nehéz emberi sorsokkal,
+de nagyon sokat jelent számunkra, segítségünkkel ügyfeleink újra teljesebb életet tudnak élni.</p>
+
+<p>A szolgáltatás érzékenysége megköveteli tőlünk megrendelőink speciális igényeinek, személyes
+biztonságuknak, kényelmüknek folyamatos szem előtt tartását. Partnercégünk, a nemzetközileg
+elismert Lehner Liftechnik csúcsminőségű termékei segítségével, és közel két évtizedes szakmai
+tapasztalatunkkal tudjuk ezt megvalósítani.</p>
+
+<p>Sok éves kitartó munkánk eredményeként mára képessé vált cégünk az egész ország területén liftek
+telepítésére.</p>
+
+<p>Ezúton is köszönjük eddigi ügyfeleink bizalmát és bízunk benne, hogy új ügyfeleink számára is mi
+tudjuk a megfelelő megoldást nyújtani.</p>
 
 <p>Liftech Group Kft Csapata</p>
                       </div> 
