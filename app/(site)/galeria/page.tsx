@@ -8,6 +8,10 @@ export default function IndexPage(){
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
+  interface ImageProps {
+    src: string;
+    alt: string;
+  }
 const images: ImageProps[] = [
     { src: "/images/galeria/img1.jpg", alt: "Image 1" },
     { src: "/images/galeria/img2.jpg", alt: "Image 2" },
