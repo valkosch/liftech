@@ -17,6 +17,7 @@ const menuData: Menu[] = [
     id: 3,
     title: "Termékeink",
     newTab: false,
+    path: "/termekek",
     submenu: [
       {
         id: 31,

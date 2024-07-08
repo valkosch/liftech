@@ -30,7 +30,7 @@ const Hero = () => {
              </div>
             <div className="mt-7 flex items-center gap-6 xl:mt-0">
               <Link
-                href="/uj-lepcsoliftek"
+                href="/termekek"
                 className="flex items-center justify-center rounded-full bg-custom px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
               >
                Nézze meg termékeinket! 
@@ -41,7 +41,7 @@ const Hero = () => {
               <div className="relative 2xl:-mr-7.5">
                 <div className=" mx-auto relative aspect-[800/512] ">
                   <Image
-                    className="shadow-solid-l dark:hidden"
+                    className="shadow-solid-l"
                     src="/images/hero/hero_img.webp"
                     alt="Szakember beszereli a lépcsőfelvonót"
                     fill

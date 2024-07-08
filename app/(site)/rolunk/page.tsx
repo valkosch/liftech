@@ -19,16 +19,16 @@ const SingleBlogPage = async () => {
                 <h2 className="mb-5 mt-11 text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
 Rólunk
                 </h2>
-            <div className="flex gap-8 lg:justify-between lg:gap-0">
+            <div className=" lg:justify-between lg:gap-0">
                     <div className="blog-details">
 <p>Használt, de teljes mértékben szervízelt és karbantartott, illetve új lépcsőliftek és platform liftek telepítésével és forgalmazásával foglalkozunk immár 12 éve. Gyakorlatilag a piacon első résztvevőként jelentősen hozzátettünk, hogy minél nagyobb körben ismert és elérhető legyen ez a segítség azok számára, akiknek erre szüksége van. Eleinte műhelyünkben kanyarodó lépcsőlifteket is gyártottunk, de miután sikeresen csatlakoztunk egy nemzetközileg is kimagasló minőséget képviselő cégcsoporthoz,(Lehner Lifttechnik) így jóval professzionálisabban és személyre szabottabban tudjuk megrendelőink igényeit kiszolgálni. Gyakorlatilag az elmúlt két évben egy igen nagy változáson ment végbe cégünk, szintet léptünk, és már vezető szerepet tudunk magunkénak ezen a piacon. De a fejlődés folyamatosságát szem előtt tartva, igyekszünk újabb és újabb termékekkel a megrendelőink legextrémebb kívánságaiknak is megfelelni. Ez úton is köszönjük, hogy minket választott, bízunk benne, hogy a legmegfelelőbb megoldást találjuk meg az Ön egyedi elképzeléséhez. Szép napot!</p>
 
 <p>Liftech Group Kft Csapata</p>
                       </div> 
-                      <div>
+                      <div className="mx-auto">
                   <Image
-                    width={1600}
-                    height={1000}
+                    width={110}
+                    height={80}
                     src="/images/logo/liftech_logo.webp"
                     alt="Logo"
                   />
