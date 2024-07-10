@@ -46,19 +46,24 @@ const Contact = () => {
                               </h2>
 
               <form
-                action="https://formbold.com/s/unique_form_id"
+                action="http://liftech.hu:3000"
+                enctype="multipart/form-data"
                 method="POST"
               >
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
                     placeholder="Teljes név"
+                    id="name"
+                    requried
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
 
                   <input
                     type="email"
                     placeholder="Email cím"
+                    id="email"
+                    requried
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
                 </div>
@@ -66,13 +71,16 @@ const Contact = () => {
                 <div className="mb-12.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
+                    id="subject"
                     placeholder="Tárgy"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
 
                   <input
                     type="text"
+                    id="tnumber"
                     placeholder="Telefonszám"
+                    requried
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
                 </div>
@@ -80,6 +88,7 @@ const Contact = () => {
                 <div className="mb-11.5 flex">
                   <textarea
                     placeholder="Üzenet"
+                    id="message"
                     rows={4}
                     className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
                   ></textarea>
@@ -95,6 +104,7 @@ const Contact = () => {
                       className="flex gap-4 max-w-[425px] cursor-pointer select-none pl-5"
                     >
                     <input
+                    requried
                       id="default-checkbox"
                       type="checkbox"
                       className="peer sr-only"
