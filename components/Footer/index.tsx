@@ -43,10 +43,10 @@ const Footer = () => {
                   Kapcsolat
                 </p>
                 <a
-                  href="mailto:info@liftech.hu"
+                  href="mailto:liftech@gmail.com"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                 info@liftech.hu 
+                 liftech@gmail.com 
                 </a>
               </motion.div>
 

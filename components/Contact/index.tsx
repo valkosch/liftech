@@ -46,7 +46,7 @@ const Contact = () => {
                               </h2>
 
               <form
-                action="http://liftech.hu:3000"
+                action="http://liftech.hu:5000"
                 enctype="multipart/form-data"
                 method="POST"
               >
@@ -186,7 +186,7 @@ const Contact = () => {
                   Email cím
                 </h3>
                 <p>
-                  <a href="mailto:info@liftech.hu">info@liftech.hu</a>
+                  <a href="mailto:liftech@gmail.com">liftech@gmail.com</a>
                 </p>
               </div>
               <div>

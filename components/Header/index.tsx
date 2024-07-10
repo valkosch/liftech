@@ -145,11 +145,6 @@ const Header = () => {
               
               +36 30 149 5552
             </Link>
-            <Link href="mailto:info@liftech.hu"
-                  className="flex items-center justify-center text-xl text-custom hover:text-primaryho"
-            >
-              info@liftech.hu
-            </Link>
           </div>
         </div>
       </div>
