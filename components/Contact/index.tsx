@@ -55,6 +55,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Teljes név"
                     id="name"
+                    name="name"
                     requried
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -63,6 +64,7 @@ const Contact = () => {
                     type="email"
                     placeholder="Email cím"
                     id="email"
+                    name="email"
                     requried
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -72,6 +74,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="subject"
+                    name="subject"
                     placeholder="Tárgy"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -79,6 +82,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="tnumber"
+                    name="tnumber"
                     placeholder="Telefonszám"
                     requried
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -89,6 +93,7 @@ const Contact = () => {
                   <textarea
                     placeholder="Üzenet"
                     id="message"
+                    name="message"
                     rows={4}
                     className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
                   ></textarea>
@@ -186,7 +191,7 @@ const Contact = () => {
                   Email cím
                 </h3>
                 <p>
-                  <a href="mailto:liftech@gmail.com">liftech@gmail.com</a>
+                  <a href="mailto:info.liftech@gmail.com">liftech@gmail.com</a>
                 </p>
               </div>
               <div>
