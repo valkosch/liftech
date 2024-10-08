@@ -49,6 +49,23 @@ const BlogData: Blog[] = [
     metadata:
       "A felvonó kültéri használatra 4 m magasságig",
   },
+  {
+    _id: 7,
+    mainImage: "/images/termekek/del/delphin1.webp",
+    slug:"platformliftek/delphin",
+    title: "Delphin",
+    metadata:
+      "Rozsdamentes acélból készült medencei lift",
+  },
+  {
+    _id: 8,
+    mainImage: "/images/termekek/step/stepsaver1.webp",
+    slug:"platformliftek/stepsaver",
+    title: "Stepsaver",
+    metadata:
+      "Alacsony lépcsők áthidalására tervezett, kompakt lift",
+  },
+
   ];
 
 export default BlogData;

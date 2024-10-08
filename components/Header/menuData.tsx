@@ -27,7 +27,7 @@ const menuData: Menu[] = [
       },
       {
         id: 34,
-        title: "Platform liftek",
+        title: "Függőleges platform liftek",
         newTab: false,
         path: "/platformliftek",
       },

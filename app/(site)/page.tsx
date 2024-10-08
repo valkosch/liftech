@@ -4,7 +4,6 @@ import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
   title: "Főoldal | Liftech.hu",

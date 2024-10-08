@@ -1,21 +1,40 @@
-"use client";
+"use client"
+import Script from "next/script"
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import { redirect } from 'next/navigation';
 
 const Contact = () => {
-  /**
-   * Source: https://www.joshwcomeau.com/react/the-perils-of-rehydration/
-   * Reason: To fix rehydration error
-   */
-  const [hasMounted, setHasMounted] = React.useState(false);
-  React.useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    return null;
-  }
+  const [fullname, setFullname] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [subject, setSubject] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [phone, setPhone] = React.useState("");
 
+ const handleSubmit = async (e) => {
+    e.preventDefault();
+
+      const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify({
+          email: email,
+          fullname: fullname,
+          subject: subject,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        return;
+      }
+    console.log(fullname, email, subject, message);
+  };
   return (
     <>
       {/* <!-- ===== Contact Start ===== --> */}
@@ -46,61 +65,71 @@ const Contact = () => {
                               </h2>
 
               <form
-                action="http://liftech.hu:5000"
-                enctype="multipart/form-data"
-                method="POST"
+		//onSubmit={handleSubmit}
               >
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
                     placeholder="Teljes név"
-                    id="name"
-                    name="name"
-                    requried
+                    name="fullname"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+		    onChange={(e) => {
+		      setFullname(e.target.value);
+		    }}
                   />
 
                   <input
                     type="email"
                     placeholder="Email cím"
-                    id="email"
                     name="email"
-                    requried
+                    required
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+		    onChange={(e) => {
+		      setEmail(e.target.value);
+		    }}
+
                   />
                 </div>
-
                 <div className="mb-12.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
-                    id="subject"
                     name="subject"
                     placeholder="Tárgy"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+		    onChange={(e) => {
+		      setSubject(e.target.value);
+		    }}
+
                   />
 
                   <input
                     type="text"
-                    id="tnumber"
-                    name="tnumber"
+                    name="phone"
                     placeholder="Telefonszám"
-                    requried
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+		    onChange={(e) => {
+		      setPhone(e.target.value);
+		    }}
+
                   />
                 </div>
 
                 <div className="mb-11.5 flex">
                   <textarea
                     placeholder="Üzenet"
-                    id="message"
                     name="message"
                     rows={4}
                     className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
+		    onChange={(e) => {
+		      setMessage(e.target.value);
+		    }}
+
+		    maxLength={300}
                   ></textarea>
                 </div>
                 <div className="grid grid-row-2 grid-col-1 mb-6 gap-3 ">
                   <label htmlFor="file">Töltsön föl képet a lépcsőjéről:</label>
-                  <input type="file" id="file" name="file" accept="image/png, image/jpeg"/>
+                  <input type="file" id="file" name="file" required accept="image/png, image/jpeg"/>
                 </div>
                 <div className="flex flex-wrap gap-4 xl:justify-between ">
                   <div className="mb-4 flex md:mb-0">
@@ -109,7 +138,7 @@ const Contact = () => {
                       className="flex gap-4 max-w-[425px] cursor-pointer select-none pl-5"
                     >
                     <input
-                    requried
+                    required
                       id="default-checkbox"
                       type="checkbox"
                       className="peer sr-only"
@@ -135,10 +164,10 @@ const Contact = () => {
                     </label>
                   </div>
                   <button
+		    type="submit"
                     aria-label="üzenet küldése"
                     className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark"
-                  >
-                    Küldés
+>                    Küldés
                     <svg
                       className="fill-white"
                       width="14"
@@ -154,7 +183,7 @@ const Contact = () => {
                     </svg>
                   </button>
                 </div>
-              </form>
+             </form>
             </motion.div>
 
             <motion.div
@@ -191,7 +220,7 @@ const Contact = () => {
                   Email cím
                 </h3>
                 <p>
-                  <a href="mailto:info.liftech@gmail.com">liftech@gmail.com</a>
+                  <a href="mailto:liftechgroupkft@gmail.com">liftechgroupkft@gmail.com</a>
                 </p>
               </div>
               <div>

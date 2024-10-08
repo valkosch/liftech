@@ -1,11 +1,12 @@
-"use client";
 
-import React, { useState } from "react";
+"use client"
 import Image from "next/image";
 import ImageViewer from "@/components/Gallery/ImageViewer";
+import React, { useState } from "react";
 
 export default function IndexPage(){
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   interface ImageProps {
@@ -67,7 +68,7 @@ const images: ImageProps[] = [
     setCurrentImageIndex(prevIndex);
   };
 
-  return (
+return (
       <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
             <div className="">
@@ -76,6 +77,7 @@ const images: ImageProps[] = [
                 <h2 className=" mt-11 text-4xl text-center font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
 Tekintse meg eddigi munkáinkat
                 </h2>    <div className=" flex flex-col">
+
       {selectedImage && (
         <ImageViewer
           selectedImage={selectedImage}
